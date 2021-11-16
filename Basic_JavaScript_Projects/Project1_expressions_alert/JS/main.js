@@ -8,6 +8,9 @@ document.write("\"Be who you are and say what you feel,"+ "because those who min
 var X = "Kids" + " so much energy"
 document.write(X)
 
+
+window.alert("Hello World!")
+
 var Family = "The Arezzinis", Dad = "Jeremiah" , Mom = "Hermoine" , Daughter = "Penny" , Son = "Zorro";
 document.write(Family)
 document.write(Dad)
@@ -17,6 +20,7 @@ var blues = blues.fontcolor("blue");
 document.write(blues);
 
 document.write(3+3);
+
 
 
 //This is where the button is for the HTML
@@ -29,3 +33,4 @@ function My_First_Function() { //Defining a function and naming it
                                                             //of result into HTML element with "Green_Text" id
 }
 //End button
+
