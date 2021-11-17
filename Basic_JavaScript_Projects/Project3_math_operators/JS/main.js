@@ -33,3 +33,23 @@ function negation_Operator() {
     var x = 10;
     document.getElementById("math7").innerHTML = -x;
 }
+
+function maxFunction() {
+    var result = Math.max(1,2,3);
+    document.getElementById("math8").innerHTML = result;
+}
+
+document.getElementById("math9").innerHTML = Math.PI;
+
+
+// var X = 5;
+// X++;
+// document.write(X);
+
+// var Y = 5.25;
+// Y--
+// document.write(Y);
+
+// window.alert(Math.random());
+// window.alert(Math.random() * 100);
+
