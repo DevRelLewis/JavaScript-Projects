@@ -37,3 +37,10 @@ function not_Function() {
 function not_Function_2() {
     document.getElementById("Not2").innerHTML = !(5 > 7);
 }
+
+function Ride_Function() {
+    var Height, Car_Ride;
+    Height = document.getElementById("Height").value
+    Can_ride = (Height < 52) ? "You are too short":"You are tall enough"
+    document.getElementById("Ride").innerHTML = Can_ride + " to ride.";
+}
