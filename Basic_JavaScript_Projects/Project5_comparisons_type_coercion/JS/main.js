@@ -30,6 +30,10 @@ function yet_another_Function() {
     document.getElementById("Test2").innerHTML = (3E310);
 }
 
+function not_Function() {
+    document.getElementById("Not").innerHTML = !(5 > 4);
+}
 
-
-
+function not_Function_2() {
+    document.getElementById("Not2").innerHTML = !(5 > 7);
+}
