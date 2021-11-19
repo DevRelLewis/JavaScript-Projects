@@ -17,3 +17,13 @@ var Erik = new Vehicle("Ford","Pinto", 1970, "Mustard");
 function myFunction() {
     document.getElementById("New_and_This").innerHTML = "Erik drives a " + Erik.Vehicle_Color + " manufactured in " + Erik.Vehicle_Model;
 }
+
+function nested_Function() {
+    document.getElementById("Count").innerHTML = Count();
+    function Count() {
+        var Starting_point = 9;
+        function Plus_one() {Starting_point += 1;}
+        Plus_one();
+        return Starting_point;
+    }
+}
