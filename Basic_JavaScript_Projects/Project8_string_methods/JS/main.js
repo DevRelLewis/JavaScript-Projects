@@ -20,13 +20,14 @@ function string_Method() {
 
 function precision_Method() {
     var X = 12938.3012987376112;
-    document.getElementById=("Precision").innerHTML = X.toPrecision(10);
+    document.getElementById("Precision").innerHTML = X.toPrecision(10);
 }
 
 function countdown() {
     var seconds = document.getElementById("seconds").value;
 
     function tick() {
+        seconds = seconds - 1;
         timer.innerHTML = seconds;
         var time = setTimeout(tick, 1000);
         if (seconds == -1) {
