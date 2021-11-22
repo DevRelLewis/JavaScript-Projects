@@ -1,3 +1,13 @@
+function constant_function() {
+    const Musical_Instrument = {type:"guitar", brand:"Fender", color:"black"};
+    Musical_Instrument.color = "blue";
+    Musical_Instrument.price = "$900";
+    document.getElementById("Constant").innerHTML = "The cost of the " +
+    Musical_Instrument.type + " was " + Musical_Instrument.price;
+}
+
+
+
 function cat_pics() {
     var Cat_Picture = [];
     Cat_Picture[0] = "sleeping";
@@ -7,8 +17,6 @@ function cat_pics() {
     document.getElementById("Cat").innerHTML 
     = "In this picture, the cat is " + Cat_Picture[2] + ".";
 }
-
-
 
 function count_To_Ten() {
     var Digit="";
