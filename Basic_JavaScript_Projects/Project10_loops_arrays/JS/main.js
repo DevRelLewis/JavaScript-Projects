@@ -1,3 +1,20 @@
+var X = 82;
+document.write(X);
+{
+    let X = 33;
+    document.write("<br>" + X);
+}
+document.write("<br>" + X);
+
+
+var X = 82;
+document.write("<br>" + X);
+{
+    var X = 33;
+    document.write("<br>" + X);
+}
+document.write("<br>" + X);
+
 function constant_function() {
     const Musical_Instrument = {type:"guitar", brand:"Fender", color:"black"};
     Musical_Instrument.color = "blue";
@@ -5,8 +22,6 @@ function constant_function() {
     document.getElementById("Constant").innerHTML = "The cost of the " +
     Musical_Instrument.type + " was " + Musical_Instrument.price;
 }
-
-
 
 function cat_pics() {
     var Cat_Picture = [];
