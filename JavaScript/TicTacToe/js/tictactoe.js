@@ -99,15 +99,15 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         }
     }
 
-    function clear() {
-        const animationLoop = requestAnimationFrame(clear);
-        c.clearRect(0, 0, 608, 608);
-        cancelAnimationFrame(animationLoop);
-    }
-    disableClick();
-    audio('./media/winGame.mp3');
-    animateLineDrawing();
-    setTimeout(function () { clear(); resetGame(); }, 1000);
+function clear() {
+    const animationLoop = requestAnimationFrame(clear);
+    c.clearRect(0, 0, 608, 608);
+    cancelAnimationFrame(animationLoop);
+}
+disableClick();
+audio('./media/winGame.mp3');
+animateLineDrawing();
+setTimeout(function () { clear(); resetGame(); }, 1000);
 }
 
 function disableClick() {
