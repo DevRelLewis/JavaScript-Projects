@@ -9,7 +9,7 @@ function Input_Digit(digit) {
     const { Display_Value, Wait_Second_Operand } = Calculator;
     if (Wait_Second_Operand === true) {
         Calculator.Display_Value = digit;
-        Calculator.Wait_Second_Operand = falso;
+        Calculator.Wait_Second_Operand = false;
     } else {
         Calculator.Display_Value = Display_Value === '0' ? digit : Display_Value + digit;
     }
@@ -33,7 +33,7 @@ function Handle_Operator(Next_Operator) {
         Calculator.First_Operand = Value_of_Input;
     } else if (operator) {
         const Value_Now = First_Operand || 0;
-        let result = Perform_Calculator[operator] (Value_Now, Value_of_Input);
+        let result = Perform_Calculation[operator](Value_Now, Value_of_Input);
         result = Number(result).toFixed(9)
         result = (result * 1).toString()
         Calculator.Display_Value = parseFloat(result);
@@ -71,16 +71,16 @@ keys.addEventListener('click' , (event) => {
         return;
     }
 
-    if (target.classLiist.contains('operator')) {
+    if (target.classList.contains('operator')) {
         Handle_Operator(target.value);
         Update_Display();
         return;
     }
 
-    if (targer.classList.contains('decimal')) {
-        Input_Decimal(target.value);
-        Update_Display();
-        return;
+    if (target.classList.contains('decimal')) {
+    Input_Decimal(target.value);
+    Update_Display();
+    return;
     }
 
     if (target.classList.contains('all-clear')) {
